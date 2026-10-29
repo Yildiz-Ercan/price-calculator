@@ -1,0 +1,155 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.main {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-card {
+  flex: 2;
+  height: 30rem;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.title {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: inherit;
+  margin: 1rem 1rem 0 1rem;
+}
+
+.button-grid {
+  margin: 0.5rem 1.5rem 0.5rem 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.button-grid button {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button-grid button:hover {
+  border-color: lightskyblue;
+}
+
+.product-name {
+  font-size: 0.7rem;
+}
+
+.product-price {
+  font-size: 0.8rem;
+  color: #287fb8;
+  font-weight: bold;
+}
+
+.divider {
+  margin: 1rem 1.5rem;
+  border-top: 1px solid #d0d0d0;
+}
+
+.total-row {
+  margin: 1rem 1.5rem 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.total-amount {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #287fb8;
+}
+
+.button-container {
+  margin: 0.5rem 1.5rem 0.5rem 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.button-container button {
+  border-radius: 0.25rem;
+  height: 2rem;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button-container button:hover {
+  background-color: transparent;
+}
+
+.button-container button:active {
+  color: white;
+}
+
+.reset-btn {
+  grid-column: 1 / -1;
+  background-color: red;
+  border: 1px solid red;
+}
+
+.reset-btn:hover {
+  color: red;
+}
+
+.locally-btn {
+  background-color: green;
+  border: 1px solid green;
+}
+
+.locally-btn:hover {
+  color: green;
+}
+
+.delivery-btn {
+  background-color: blue;
+  border: 1px solid blue;
+}
+
+.delivery-btn:hover {
+  color: blue;
+}
+
+.side-card {
+  flex: 1;
+  height: 30rem;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.side-card .title {
+  font-size: 1.2rem;
+}
